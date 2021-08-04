@@ -1402,7 +1402,7 @@ class GeometryObject(FlatCAMObj, Geometry):
         self.ui_connect()
         self.builduiSig.emit()
 
-    def on_tool_delete(self, clicked_signal, all_tools=None):
+    def on_tool_delete(self, all_tools=None):
         """
         It's important to keep the not clicked_signal parameter otherwise the signal will go to the all_tools
         parameter and I might get all the tool deleted
